@@ -1,76 +1,58 @@
-# Getting Started with Create React App
+# React Image Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-<p align="center">
-  <img src="https://github.com/SerkanBahtiyar/apiProject/blob/main/apiProje/resimapi/src/components/pngg/a.png" alt="image1">
-  <br><br>
-    <img src="https://github.com/SerkanBahtiyar/apiProject/blob/main/apiProje/resimapi/src/components/pngg/b.png" alt="image1">
-</p>
+A React application that searches for photos by keyword using the Unsplash API and displays the results.
 
+## Features
 
-## Available Scripts
+- Keyword-based photo search
+- API requests with Axios
+- Reusable search bar and image list components
+- React component state for displaying results
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- React 18
+- JavaScript
+- Axios
+- Unsplash API
+- HTML and CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository and open the application folder:
 
-### `npm test`
+   ```bash
+   cd apiProje/resimapi
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
 
-### `npm run build`
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Create a local `.env` file in this folder and add your own Unsplash access key:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```env
+   REACT_APP_UNSPLASH_ACCESS_KEY=your_access_key
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   You can use `.env.example` as a template. Create an application in the Unsplash developer dashboard to obtain a key.
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   Open http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Security
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Never commit your real API key.
+- The local `.env` file is excluded by `.gitignore`.
+- The React environment variable is included in the client-side build. It keeps the key out of source control, but it is **not a secure secret store**. For a production application, route requests through a backend that protects the key and applies appropriate usage limits.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Serkan Bahtiyar** · [Portfolio](https://serkanbahtiyar.github.io/) · [GitHub](https://github.com/SerkanBahtiyar) · [LinkedIn](https://www.linkedin.com/in/serkanbahtiyar/)
